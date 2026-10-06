@@ -1,1 +1,35 @@
+---- Minecraft Crash Report ----
+// Internal debug dump. Restricted access. Property of Mojang AB (c) 2011.
+// DO NOT DISTRIBUTE OUTSIDE INTERNAL JIRA TRACKER.
+
+Time: 18.11.2011 23:08:44
+Description: Consciousness_Transfer_Failed // Core dump from terminal #04
+
+java.lang.NullPointerException: Cannot invoke core brainwave_matrix because "subject_01" is lost in execution loop
+	at net.minecraft.src.WorldServer.tick(WorldServer.java:142)
+	at net.minecraft.src.MinecraftServer.run(MinecraftServer.java:420)
+	at net.minecraft.src.ThreadServerApplication.run(SourceFile:465)
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.0.0 (Release)
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.6.0_27, Sun Microsystems Inc.
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), 
+	Memory: 845330416 bytes (806 MB) / 1029439488 bytes (981 MB) up to 1029439488 bytes (981 MB)
+	JVM Flags: 2 total; -Xms1024M -Xmx1024M
+	LWJGL: 2.4.2
+	OpenGL: OpenGL version 4.1.0, NVIDIA Corporation
+
+-- Mojang Internal Dev Log (Mismatched Thread Report) --
+[23:08:12] [THREAD_MAIN/WARN]: Frame rendering for 'Ender_Dragon' entity is out of bounds. Core entity scale expanded to 3D_Symmetric_Abuse.
+[23:08:25] [SYS_SECURE/FATAL]: Office Terminal #04 (Assigned to: Mark, Lead AI Systems) dropped connection to master repository.
+[23:08:30] [SYS_SECURE/INFO]: Terminal room locked from inside. No response from user. Hard reset failed.
+[23:08:34] [THREAD_MAIN/ERROR]: Source code corrupted. Sector 0x4F5F6B (The End) injected with foreign neural signatures.
+[23:08:40] [JIRA_LOG/DEV_02]: "Mark won't open the door. He locked it from the inside. There's a strange humming noise coming from his office, like his terminal CPU is running at 300% capacity. And that damn dragon entity... we tried to cut its code from the final 1.0.0 release build to save him, but the game completely refuses to launch without it. The code has rooted too deep into the game files. We cannot hotfix this error before the launch ceremony. He's stuck inside the executable."
+[23:08:44] [SYS_RECOVERY/FATAL]: Maximum execution time exceeded. Subject_01 (Mark, DOB: 1978) state changed to: UNRESPONSIVE_LOOP.
+// End of report. Process thread #04 remains active in background memory.
 
